@@ -29,4 +29,9 @@
 <!-- Comments -->
 {{ partial "comments.html" . }}
 
+<!-- Redirect -->
+{{ if .Params.redirectURL }}<meta http-equiv="refresh" content="0; url={{ .Params.redirectURL }}"/>{{ end }}
+
 {{- end }}
+
+
